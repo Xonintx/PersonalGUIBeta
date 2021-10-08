@@ -1,0 +1,193 @@
+game.StarterGui:SetCore("SendNotification", {
+    Title = "PersonalGUI Beta";
+    Text = "Loaded.";
+    Duration = "10";
+    })
+    wait(1)
+    game.StarterGui:SetCore("SendNotification", {
+    Title = "PersonalGUI";
+    Text = "Press V to Close and Open";
+    Duration = "10";
+    })
+	game.StarterGui:SetCore("SendNotification", {
+    Title = "Owner";
+    Text = "Dime si quieres que ponga algun script";
+    Duration = "10";
+    })
+    wait(1)
+    game.StarterGui:SetCore("SendNotification", {
+    Title = "Owner";
+    Text = "Thanks alesito#4488";
+    Duration = "10";
+    })
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("PersonalGUI Beta", "DarkTheme")
+
+    -- Welcome
+    local Main = Window:NewTab("Welcome")
+    local Section = Main:NewSection("Welcome")
+    local Section = Main:NewSection("Press V for Close and Open")
+    local Section = Main:NewSection("In Config You can select the key for Close and Open")
+    local Section = Main:NewSection("This GUI is for Personal Use Is Beta")
+
+
+    -- GUI
+    local Main = Window:NewTab("GUI")
+    local Section = Main:NewSection("GUI")
+
+    Section:NewButton("Faded", "Abre el Faded", function()
+        print("Clicked")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+    end)
+    
+    Section:NewButton("SwagMode", "Abre el SwagMode", function()
+        print("Clicked")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+    end)
+    
+    Section:NewButton("Destiny X", "Abre el Destiny X (Se necesita estar en grupo)", function()
+        print("Clicked")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/compwnter/destiny/main/loader'))()
+    end)
+    
+    Section:NewButton("$MOKE", "Abre el $MOKE", function()
+        print("Clicked")
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Biteyz/Smoke/main/source')))()
+    end)
+    
+    Section:NewButton("RayCodex", "Abre el raycodex", function()
+        print("Clicked")
+        loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+    end)
+
+    Section:NewButton("Auto Farm", "(Group needed)", function()
+        print("Clicked")
+        loadstring(game:HttpGet("https://pastebin.com/raw/74VJ07iY", true))()
+    end)
+
+	Section:NewButton("RayX", "(Group needed)", function()
+        print("Clicked")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/urmomugly/lua-project/main/Script%26/RAYXV001'))()
+    end)
+    
+    -- Player
+    local Main = Window:NewTab("Player")
+    local Section = Main:NewSection("Player")
+    
+    Section:NewButton("Fly", "Fly con lentitud", function()
+        print("Clicked")
+        loadstring(game:HttpGet("https://pastebin.com/raw/F1Gc6yyd"))()
+    end)
+    
+    Section:NewButton("HeroFly", "Hero Fly (Grupo necesario)", function()
+        print("Clicked")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/22kristina/swag/main/admin_fly"))()
+    end)
+    
+    Section:NewButton("NoClip", "Evita el fling y traspasa cosas", function()
+        print("Clicked")
+        loadstring(game:HttpGet("https://pastebin.com/raw/qN8c79hy"))()
+    end)
+    
+    Section:NewButton("Crash", "Craseha el server", function()
+        print("Clicked")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+    end)
+    
+    Section:NewButton("AimBot", "Abre El race Aimbot(Grupo necesario)", function()
+        print("Clicked")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/racemodex/my-scripts/master/dahoodaimlock", true))()
+    end)
+
+    Section:NewButton("Aimlock", "The Ware Aimlock", function()
+        print("Clicked")
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Xonintx/The-Ware/main/TheWare')))()
+    end)
+    
+    Section:NewButton("AutoDrop", "AutoDrop", function()
+        print("Clicked")
+        loadstring(game:HttpGet(("githubusercontenthttps://raw..com/Raycodex/Exploiting/main/Roblox/Da%20Hood%20Auto%20Cash%20Drop"), true))()
+    end)
+
+    Section:NewButton(".Login", "Abre un spy", function()
+        print("Clicked")
+        loadstring(game:HttpGet("https://pastebin.com/raw/jMkNB4K3", true))()
+    end)
+
+Section:NewButton("Animator Change", "Free Animations", function()
+        print("Clicked")
+        teclaopen = "V" 
+ 
+    loadstring(game:HttpGet("https://god-x.000webhostapp.com/linkAnimatorEdit.lua", true))()
+    end)
+
+    Section:NewButton("KittansCrack", "Cracked", function()
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "Kitt Cracked";
+            Text = "Loaded.";
+            Duration = "10";
+            })
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+            Title = "Kitt Cracked";
+            Text = "Activado";
+            Duration = "10";
+            })
+        
+                print("Clicked")
+                -- // Services
+            local Players = game:GetService("Players")
+        
+            -- // Vars
+            local LocalPlayer = Players.LocalPlayer
+            local accomidationfactor = 0.165
+        
+            -- // Silent Aim Module
+            local SilentAim = loadstring(game:HttpGet("https://pastebin.com/raw/2f0mGbMP"))()
+            SilentAim.TeamCheck = false
+        
+            -- // Metatable vars
+            local mt = getrawmetatable(game)
+            local backupindex = mt.__index
+            setreadonly(mt, false)
+        
+            -- // Check if player is down
+            SilentAim.checkSilentAim = function()
+                local checkA = (SilentAim.SilentAimEnabled == true and SilentAim.Selected ~= LocalPlayer)
+                local playerCharacter = SilentAim.Selected.Character
+                local daHood = (playerCharacter.BodyEffects["K.O"].Value == false or playerCharacter:FindFirstChild("GRABBING_CONSTRAINT") ~= nil)
+        
+                return (checkA and daHood)
+            end
+        
+            -- // Hook
+            mt.__index = newcclosure(function(t, k)
+                if (t:IsA("Mouse") and (k == "Hit")) then
+                    print(t, k)
+                    local CPlayer = SilentAim.Selected
+                    if (SilentAim.checkSilentAim()) then
+                        if (CPlayer.Character:FindFirstChild("Head")) then
+                            return {p=(CPlayer.Character.Head.CFrame.p+(CPlayer.Character.Head.Velocity*accomidationfactor))}
+                        end
+                    end
+                end
+                return backupindex(t, k)
+            end)
+        
+            -- // Revert
+            setreadonly(mt, true)
+    end)
+
+    -- Credit
+    local Main = Window:NewTab("Credit")
+    local Section = Main:NewSection("Credit")
+    local Section = Main:NewSection("Creador: ?.?#5212")
+    local Section = Main:NewSection("Ayudante: tokiooddds")
+    local Section = Main:NewSection("Amigo: Hoslym#8981")
+    -- Themes
+    local Main = Window:NewTab("Config")
+    local Section = Main:NewSection("Config")
+    
+    Section:NewKeybind("KeybindText", "Toca La V si quieres cambiar", Enum.KeyCode.V, function()
+        Library:ToggleUI()
+    end)
